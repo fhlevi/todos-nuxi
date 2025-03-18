@@ -1,13 +1,11 @@
-import { z } from 'zod';
+interface ToasterProps {
+  isOpen: boolean;
+  onRequestClose: () => void;
+}
 
-const ToasterWithData = z.object({
-    open: z.function().args(z.any()).returns(z.void()),
-    close: z.function().args(z.any()).returns(z.void()),
-    props: z.object({
-        isOpen: z.boolean(),
-        onRequestClose: z.function().args(z.any()).returns(z.void()),
-    }),
-    data: z.any()
-});
-
-export type ToasterWithDataSchema = z.infer<typeof ToasterWithData>;
+export interface ToasterWithDataSchema {
+  open: () => void;
+  close: () => void;
+  props: ToasterProps;
+  data: any;
+}

@@ -2,10 +2,12 @@
 
 const config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './main.tsx'
+    './pages/**/*.{js,ts,jsx,tsx,mdx,vue}',
+    './components/**/*.{js,ts,jsx,tsx,mdx,vue}',
+    './ui/**/*.{js,ts,jsx,tsx,mdx,vue}',
+    './app.vue',
+    './node_modules/primevue/**/*.{vue,js,ts,jsx,tsx}',
+    './nuxt.config.{js,ts}',
   ],
   theme: {
     extend: {
