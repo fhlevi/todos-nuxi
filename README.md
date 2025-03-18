@@ -1,9 +1,6 @@
-# Front-end React + Vite
+# Front-end Nuxt
 
-[React.js](https://react.dev/) 
-[Vite](https://vitejs.dev/) 
-
-[Demo](https://todo-alpha-list.vercel.app/)
+[Nuxt.js](https://nuxt.com/) 
 
 ## Getting Started
 
